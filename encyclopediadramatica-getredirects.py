@@ -32,6 +32,8 @@ def get_links(altpedia, page, _writer):
 		r = requests.get(baseurl, params = params)
 		data = r.json()
 
+		print data
+
 		pageid = next(iter(data['query']['pages']))
 
 		results = results + data['query']['pages'][pageid]['links']
