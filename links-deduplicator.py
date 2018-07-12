@@ -17,7 +17,7 @@ writer = csv.writer(ofile, delimiter='\t', quotechar='"')
 writer.writerow(["source","target"])
 
 #open source file
-with open('links-fixed.csv') as csvfile:
+with open('links-fixed-final.csv') as csvfile:
 	readCSV = csv.reader(csvfile, delimiter='\t')
 	# skip fist Line
 	next(readCSV, None)
